@@ -4,6 +4,8 @@ const styles = {
         fontWeight: "regular",
         backgroundColor: "background",
         color: "text",
+        fontSize: 4,
+        lineHeight: "none",
     },
 };
 
@@ -20,6 +22,7 @@ const colorSettings = {
     colors: {
         text: "#222222",
         background: "#F4F4F4",
+        white: "#ffffff",
         primary: "#FF0101",
         secondary: "#1606AA",
         lightPrimary: "#F6C3C3",
@@ -44,6 +47,7 @@ const colorSettings = {
 const fontSettings = {
     fonts: {
         base: "Poppins, sans-serif",
+        heading: "Poppins, sans-serif",
         monospace: "Menlo, monospace",
     },
     fontSizes: [12, 14, 16, 18, 24, 30, 42, 50, 68, 96, 128],
@@ -52,8 +56,11 @@ const fontSettings = {
         regular: 400,
         medium: 500,
         semibold: 600,
+        heading: 600,
+        bold: 600,
     },
     lineHeights: {
+        none: 1,
         body: 1.5,
         heading: 1.125,
     },
@@ -65,15 +72,19 @@ const fontSettings = {
 };
 
 const radii = {
-    none: '0px',
+    none: "0px",
     base: "4px",
     large: "0.5rem",
     full: "9999px",
 };
 
 const shadows = {
-    none: '0',
-    base: "0 5px 5px",
+    none: "0 0 0",
+    small: "0 1px 1px rgba(114, 114, 114, 1)",
+    smallTransparent: "0 1px 1px rgba(114, 114, 114, 0.1)",
+    light: "0 5px 5px rgba(114, 114, 114, 0.4)",
+    lightTransparent: "0 5px 5px rgba(114, 114, 114, 0.1)",
+    base: "0 5px 5px #727272",
 };
 
 export default {
