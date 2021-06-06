@@ -1,8 +1,9 @@
 const styles = {
     root: {
-        fontFamily: "body",
-        fontWeight: "body",
+        fontFamily: "base",
+        fontWeight: "regular",
         backgroundColor: "background",
+        color: "text",
     },
 };
 
@@ -17,16 +18,19 @@ const colorSettings = {
         printColorModeName: "light",
     },
     colors: {
-        text: "#f0f",
-        background: "#fff",
-        primary: "#0070f3",
-        primaryComplement: "#fff",
-        secondary: "#000",
-        secondaryComplement: "#fff",
-        accent: "red",
-        link: "red",
-        highlight: "#defdef",
-        muted: "#efefef",
+        text: "#222222",
+        background: "#F4F4F4",
+        primary: "#FF0101",
+        secondary: "#1606AA",
+        lightPrimary: "#F6C3C3",
+        mutedPrimary: "#FAEAEA",
+        cancel: "#FF0000",
+        correct: "#28A745",
+        available: "#6CC986",
+        link: "#0000EE",
+        gray: "#C4C4C4",
+        lightGray: "#EAEAEA",
+        darkGray: "#727272",
         modes: {
             dark: {
                 text: "#fff",
@@ -39,15 +43,15 @@ const colorSettings = {
 
 const fontSettings = {
     fonts: {
-        body: "sans-serif",
-        heading: '"Monoton", sans-serif',
+        base: "Poppins, sans-serif",
         monospace: "Menlo, monospace",
     },
-    fontSizes: [12, 14, 16, 20, 24, 32, 64, 96, 128, 144, 164],
+    fontSizes: [12, 14, 16, 18, 24, 30, 42, 50, 68, 96, 128],
     fontWeights: {
-        body: 400,
-        heading: 700,
-        bold: 700,
+        light: 300,
+        regular: 400,
+        medium: 500,
+        semibold: 600,
     },
     lineHeights: {
         body: 1.5,
@@ -60,6 +64,18 @@ const fontSettings = {
     },
 };
 
+const radii = {
+    none: '0px',
+    base: "4px",
+    large: "0.5rem",
+    full: "9999px",
+};
+
+const shadows = {
+    none: '0',
+    base: "0 5px 5px",
+};
+
 export default {
     ...colorSettings,
     ...fontSettings,
@@ -68,4 +84,6 @@ export default {
     opacities: [...opacities],
     space: [...space],
     sizes: [...sizes],
+    radii: { ...radii },
+    shadows: { ...shadows },
 };
