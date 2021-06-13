@@ -2,10 +2,11 @@ const styles = {
     root: {
         fontFamily: "base",
         fontWeight: "light",
-        backgroundColor: "background",
+        backgroundColor: "white",
         color: "text",
-        fontSize: 3,
-        lineHeight: "none",
+        fontSize: 4,
+        lineHeight: "body",
+        letterSpacing: 'body',
     },
 };
 
@@ -32,7 +33,7 @@ const colorSettings = {
         available: "#6CC986",
         link: "#0000EE",
         gray: "#C4C4C4",
-        lightGray: "#EAEAEA",
+        lightGray: "#f5f5f5",
         darkGray: "#727272",
         modes: {
             dark: {
