@@ -9,7 +9,7 @@ const styles = {
     },
 };
 
-const breakpoints = ["640px", "768px", "1024px", "1280px", "1536px"];
+const breakpoints = ["640px", "768px", "1024px", "1380px", "1536px"];
 const opacities = [0, 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1];
 const sizes = [0, 4, 8, 12, 16, 24, 28, 32, 36, 48, 64];
 const space = [0, 4, 8, 12, 16, 32, 64, 128, 246, 450];
