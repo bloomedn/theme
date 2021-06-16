@@ -27,6 +27,7 @@ const colorSettings = {
         primary: "#FF0101",
         secondary: "#1606AA",
         lightPrimary: "#F6C3C3",
+        lightestPrimary: "#FAEAEA",
         mutedPrimary: "#FAEAEA",
         cancel: "#FF0000",
         correct: "#28A745",
