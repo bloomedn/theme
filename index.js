@@ -36,6 +36,7 @@ const colorSettings = {
         gray: "#C4C4C4",
         lightGray: "#f5f5f5",
         darkGray: "#727272",
+        darkBlue: '#182334',
         modes: {
             dark: {
                 text: "#fff",
