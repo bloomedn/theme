@@ -42,8 +42,21 @@ const colorSettings = {
                 text: "#fff",
                 background: "#000",
                 primary: "#ocf",
+                secondary: "#09c",
+                muted: "#111",
             },
         },
+    },
+};
+
+const layout = {
+    toolbar: {
+        display: "flex",
+        alignItems: "center",
+        // justifyContent: "space-between",
+    },
+    footer: {
+        backgroundColor: "background_secondary",
     },
 };
 
@@ -92,6 +105,7 @@ const shadows = {
 
 export default {
     ...colorSettings,
+    ...layout,
     ...fontSettings,
     styles: { ...styles },
     breakpoints: [...breakpoints],
