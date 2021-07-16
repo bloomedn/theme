@@ -23,6 +23,7 @@ const colorSettings = {
     colors: {
         text: "#222222",
         background: "#F4F4F4",
+        backgroundlight: "#e8e8e8", 
         white: "#ffffff",
         primary: "#FF0101",
         secondary: "#1606AA",
