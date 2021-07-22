@@ -44,7 +44,7 @@ const colorSettings = {
                 text: "#fff",
                 background: "#000",
                 primary: "#ocf",
-                secondary: "#09c",
+               secondary: "#09c",
                 muted: "#111",
             },
         },
