@@ -25,6 +25,7 @@ const colorSettings = {
         background: "#F4F4F4",
         backgroundlight: "#e8e8e8", 
         white: "#ffffff",
+        borderColor: '#DCE5EA', 
         primary: "#FF0101",
         secondary: "#1606AA",
         lightPrimary: "#F6C3C3",
