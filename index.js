@@ -40,15 +40,15 @@ const colorSettings = {
         darkGray: "#727272",
         darkBlue: '#182334',
         darkPrimary: '#cc0101',
-        modes: {
-            dark: {
-                text: "#fff",
-                background: "#000",
-                primary: "#ocf",
-               secondary: "#09c",
-                muted: "#111",
-            },
-        },
+        // modes: {
+        //     dark: {
+        //         text: "#fff",
+        //         background: "#000",
+        //         primary: "#ocf",
+        //        secondary: "#09c",
+        //         muted: "#111",
+        //     },
+        // },
     },
 };
 
