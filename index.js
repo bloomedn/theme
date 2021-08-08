@@ -10,7 +10,8 @@ const styles = {
     },
 };
 
-const breakpoints = ["640px", "768px", "1024px", "1380px", "1536px"];
+
+const breakpoints = ['480px','640px','768px','1024px','1220px','1366px','1620px'];
 const opacities = [0, 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1];
 const sizes = [0, 4, 8, 12, 16, 24, 28, 32, 36, 48, 64];
 const space = [0, 4, 8, 12, 16, 32, 64, 128, 246, 450];
@@ -40,15 +41,13 @@ const colorSettings = {
         darkGray: "#727272",
         darkBlue: '#182334',
         darkPrimary: '#cc0101',
-        // modes: {
-        //     dark: {
-        //         text: "#fff",
-        //         background: "#000",
-        //         primary: "#ocf",
-        //        secondary: "#09c",
-        //         muted: "#111",
-        //     },
-        // },
+        text: "#222222",
+        background: "#F4F4F4",
+        backgroundlight: "#e8e8e8", 
+        borderColor: '#DCE5EA', 
+        heading: '#222222', // primary heading color
+        heading_secondary: '#0F2137', // heading color
+        accent: '#609', // a contrast color for emphasizing UI
     },
 };
 
@@ -56,7 +55,6 @@ const layout = {
     toolbar: {
         display: "flex",
         alignItems: "center",
-        // justifyContent: "space-between",
     },
     footer: {
         backgroundColor: "background_secondary",
