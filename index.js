@@ -12,9 +12,10 @@ const styles = {
 
 
 const breakpoints = ['480px','640px','768px','1024px','1220px','1366px','1620px'];
+
 const opacities = [0, 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1];
 const sizes = [0, 4, 8, 12, 16, 24, 28, 32, 36, 48, 64];
-const space = [0, 4, 8, 12, 16, 32, 64, 128, 246, 450];
+const space = [ 0, 5, 10,15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160];
 
 const colorSettings = {
     config: {
@@ -24,6 +25,7 @@ const colorSettings = {
     colors: {
         text: "#222222",
         background: "#F4F4F4",
+        background_secondary: "#3f70a1", // secondary background color
         backgroundlight: "#e8e8e8", 
         white: "#ffffff",
         borderColor: '#DCE5EA', 
@@ -41,10 +43,6 @@ const colorSettings = {
         darkGray: "#727272",
         darkBlue: '#182334',
         darkPrimary: '#cc0101',
-        text: "#222222",
-        background: "#F4F4F4",
-        backgroundlight: "#e8e8e8", 
-        borderColor: '#DCE5EA', 
         heading: '#222222', // primary heading color
         heading_secondary: '#0F2137', // heading color
         accent: '#609', // a contrast color for emphasizing UI
@@ -57,7 +55,82 @@ const layout = {
         alignItems: "center",
     },
     footer: {
-        backgroundColor: "background_secondary",
+        color: "background_secondary",
+    },
+};
+
+  // variants for buttons
+  const buttons = {
+    menu: {
+        display: [null, null, "none"],
+    }, // default variant for MenuButton
+    // you can reference other values defined in the theme
+    defaultBtn: {
+        borderRadius: "45px",
+        fontSize: ["14px", null, null, 2],
+        letterSpacings: "-0.15px",
+        padding: ["12px 20px", null, "15px 30px"],
+        fontFamily: "body",
+        cursor: "pointer",
+        lineHeight: 1.2,
+        transition: "all 0.25s",
+        fontWeight: 500,
+        "&:focus": {
+            outline: 0,
+        },
+    },
+    primary: {
+        variant: "buttons.defaultBtn",
+        color: "text_secondary",
+        bg: "primary",
+        "&:hover": {
+            boxShadow: "rgba(233, 76, 84, 0.57) 0px 9px 20px -5px",
+        },
+    },
+    small: {
+        variant: "buttons.secondary",
+        padding: [
+            "10px 20px",
+            "10px 20px",
+            "10px 20px",
+            "10px 20px",
+            "10px 20px",
+        ],
+    },
+    whiteButton: {
+        variant: "buttons.defaultBtn",
+        color: "heading_secondary",
+        bg: "white",
+        "&:hover": {
+            boxShadow: "rgba(0, 0, 0, 0.5) 0px 12px 24px -10px",
+        },
+    },
+    secondary: {
+        variant: "buttons.defaultBtn",
+        border: "2px solid",
+        borderColor: "primary",
+        color: "primary",
+        bg: "transparent",
+        padding: ["10px 15px", null, "15px 30px"],
+        "&:hover": {
+            color: "white",
+            bg: "primary",
+        },
+    },
+    textButton: {
+        variant: "buttons.defaultBtn",
+        backgroundColor: "transparent",
+        cursor: "pointer",
+        color: "white",
+        svg: {
+            fontSize: [4, 6],
+            mr: 2,
+        },
+    },
+    smallPadding: {
+        variant: "buttons.defaultBtn",
+        padding: ["10px 5px"],
+        backgroundColor: "transparent",
     },
 };
 
@@ -68,6 +141,7 @@ const fontSettings = {
         monospace: "Menlo, monospace",
     },
     fontSizes: [12, 14, 16, 18, 24, 30, 42, 50, 68, 96, 128],
+    
     fontWeights: {
         light: 300,
         regular: 400,
@@ -108,6 +182,7 @@ export default {
     ...colorSettings,
     ...layout,
     ...fontSettings,
+    buttons : { ...buttons },
     styles: { ...styles },
     breakpoints: [...breakpoints],
     opacities: [...opacities],
@@ -116,3 +191,5 @@ export default {
     radii: { ...radii },
     shadows: { ...shadows },
 };
+
+
