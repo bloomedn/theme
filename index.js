@@ -10,11 +10,12 @@ const styles = {
     },
 };
 
-
 const breakpoints = ['480px','640px','768px','1024px','1220px','1366px','1620px'];
-
 const opacities = [0, 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1];
 const sizes = [0, 4, 8, 12, 16, 24, 28, 32, 36, 48, 64];
+
+// const space = [0, 4, 8, 12, 16, 32, 64, 128, 246, 450];
+
 const space = [ 0, 5, 10,15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160];
 
 const colorSettings = {
@@ -23,13 +24,12 @@ const colorSettings = {
         printColorModeName: "light",
     },
     colors: {
-        text: "#222222",
+        text: "#343D48", // body color and primary color
         background: "#F4F4F4",
-        background_secondary: "#3f70a1", // secondary background color
+        backgroundSecondary: "#3f70a1", // secondary background color
         backgroundlight: "#e8e8e8", 
-        white: "#ffffff",
         borderColor: '#DCE5EA', 
-        primary: "#FF0101",
+        primary: "#FF0101", // primary button and link color
         secondary: "#1606AA",
         lightPrimary: "#F6C3C3",
         lightestPrimary: "#FAEAEA",
@@ -44,7 +44,7 @@ const colorSettings = {
         darkBlue: '#182334',
         darkPrimary: '#cc0101',
         heading: '#222222', // primary heading color
-        heading_secondary: '#0F2137', // heading color
+        headingSecondary: '#0F2137', // heading color
         accent: '#609', // a contrast color for emphasizing UI
     },
 };
@@ -55,8 +55,11 @@ const layout = {
         alignItems: "center",
     },
     footer: {
-        color: "background_secondary",
+        color: "backgroundSecondary",
     },
+    main : {
+        color : 'text',    
+    }
 };
 
   // variants for buttons
@@ -99,7 +102,7 @@ const layout = {
     },
     whiteButton: {
         variant: "buttons.defaultBtn",
-        color: "heading_secondary",
+        color: "headingSecondary",
         bg: "white",
         "&:hover": {
             boxShadow: "rgba(0, 0, 0, 0.5) 0px 12px 24px -10px",
