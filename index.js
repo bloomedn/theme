@@ -8,6 +8,18 @@ const styles = {
         lineHeight: "body",
         letterSpacing: 'body',
     },
+    srOnly: {
+        border: '0 !important',
+        clip: 'rect(1px, 1px, 1px, 1px) !important',
+        clipPath: 'inset(50%) !important',
+        height: '1px !important',
+        margin: '-1px !important',
+        overflow: 'hidden !important',
+        padding: '0 !important',
+        position: 'absolute !important',
+        width: '1px !important',
+        whiteSpace: 'nowrap !important',
+      },
 };
 
 const breakpoints = ['480px','640px','768px','1024px','1220px','1366px','1620px'];
@@ -172,6 +184,24 @@ const radii = {
     full: "9999px",
 };
 
+const forms = {
+    label: {
+      fontSize: 1,
+      fontWeight: 'bold',
+    },
+    input: {
+      borderRadius: 8,
+      borderColor: 'border_color',
+      color : 'red',
+      height: 60,
+      '&:focus': {
+        borderColor: 'primary',
+        boxShadow: (t) => `0 0 0 2px ${t.colors.primary}`,
+        outline: 'none',
+      },
+    },
+  };
+
 const shadows = {
     none: "0 0 0",
     small: "0 1px 1px rgba(114, 114, 114, 1)",
@@ -185,6 +215,7 @@ export default {
     ...colorSettings,
     ...layout,
     ...fontSettings,
+    ...forms,
     buttons : { ...buttons },
     styles: { ...styles },
     breakpoints: [...breakpoints],
