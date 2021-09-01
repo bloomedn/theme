@@ -1,229 +1,238 @@
 const styles = {
-    root: {
-        fontFamily: "base",
-        fontWeight: "light",
-        backgroundColor: "white",
-        color: "text",
-        fontSize: 4,
-        lineHeight: "body",
-        letterSpacing: 'body',
-    },
-    srOnly: {
-        border: '0 !important',
-        clip: 'rect(1px, 1px, 1px, 1px) !important',
-        clipPath: 'inset(50%) !important',
-        height: '1px !important',
-        margin: '-1px !important',
-        overflow: 'hidden !important',
-        padding: '0 !important',
-        position: 'absolute !important',
-        width: '1px !important',
-        whiteSpace: 'nowrap !important',
-      },
+  root: {
+    fontFamily: "base",
+    fontWeight: "light",
+    backgroundColor: "white",
+    color: "text",
+    fontSize: 4,
+    lineHeight: "body",
+    letterSpacing: "body",
+  },
+  srOnly: {
+    border: "0 !important",
+    clip: "rect(1px, 1px, 1px, 1px) !important",
+    clipPath: "inset(50%) !important",
+    height: "1px !important",
+    margin: "-1px !important",
+    overflow: "hidden !important",
+    padding: "0 !important",
+    position: "absolute !important",
+    width: "1px !important",
+    whiteSpace: "nowrap !important",
+  },
 };
 
-const breakpoints = ['480px','640px','768px','1024px','1220px','1366px','1620px'];
+const breakpoints = [
+  "480px",
+  "640px",
+  "768px",
+  "1024px",
+  "1220px",
+  "1366px",
+  "1620px",
+];
 const opacities = [0, 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1];
 const sizes = [0, 4, 8, 12, 16, 24, 28, 32, 36, 48, 64];
 
 // const space = [0, 4, 8, 12, 16, 32, 64, 128, 246, 450];
 
-const space = [ 0, 5, 10,15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160];
+const space = [
+  0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 80, 90, 100, 110,
+  120, 130, 140, 150, 160,
+];
 
 const colorSettings = {
-    config: {
-        initialColorModeName: "light",
-        printColorModeName: "light",
-    },
-    colors: {
-        text: "#343D48", // body color and primary color
-        background: "#F4F4F4",
-        backgroundSecondary: "#3f70a1", // secondary background color
-        backgroundlight: "#e8e8e8", 
-        borderColor: '#DCE5EA', 
-        primary: "#FF0101", // primary button and link color
-        secondary: "#1606AA",
-        lightPrimary: "#F6C3C3",
-        lightestPrimary: "#FAEAEA",
-        mutedPrimary: "#FAEAEA",
-        cancel: "#FF0000",
-        correct: "#28A745",
-        available: "#6CC986",
-        link: "#0000EE",
-        gray: "#C4C4C4",
-        lightGray: "#f5f5f5",
-        darkGray: "#727272",
-        darkBlue: '#182334',
-        darkPrimary: '#cc0101',
-        heading: '#222222', // primary heading color
-        headingSecondary: '#0F2137', // heading color
-        accent: '#609', // a contrast color for emphasizing UI
-    },
+  config: {
+    initialColorModeName: "light",
+    printColorModeName: "light",
+  },
+  colors: {
+    text: "#343D48", // body color and primary color
+    background: "#F4F4F4",
+    backgroundSecondary: "#3f70a1", // secondary background color
+    backgroundlight: "#e8e8e8",
+    borderColor: "#DCE5EA",
+    primary: "#FF0101", // primary button and link color
+    secondary: "#1606AA",
+    lightPrimary: "#F6C3C3",
+    lightestPrimary: "#FAEAEA",
+    mutedPrimary: "#FAEAEA",
+    cancel: "#FF0000",
+    correct: "#28A745",
+    available: "#6CC986",
+    link: "#0000EE",
+    gray: "#C4C4C4",
+    lightGray: "#f5f5f5",
+    darkGray: "#727272",
+    darkBlue: "#182334",
+    darkPrimary: "#cc0101",
+    heading: "#222222", // primary heading color
+    headingSecondary: "#0F2137", // heading color
+    accent: "#609", // a contrast color for emphasizing UI
+  },
 };
 
 const layout = {
-    toolbar: {
-        display: "flex",
-        alignItems: "center",
-    },
-    footer: {
-        color: "backgroundSecondary",
-    },
-    main : {
-        color : 'text',    
-    }
+  toolbar: {
+    display: "flex",
+    alignItems: "center",
+  },
+  footer: {
+    color: "backgroundSecondary",
+  },
+  main: {
+    color: "text",
+  },
 };
 
-  // variants for buttons
-  const buttons = {
-    menu: {
-        display: [null, null, "none"],
-    }, // default variant for MenuButton
-    // you can reference other values defined in the theme
-    defaultBtn: {
-        borderRadius: "45px",
-        fontSize: ["14px", null, null, 2],
-        letterSpacings: "-0.15px",
-        padding: ["12px 20px", null, "15px 30px"],
-        fontFamily: "body",
-        cursor: "pointer",
-        lineHeight: 1.2,
-        transition: "all 0.25s",
-        fontWeight: 500,
-        "&:focus": {
-            outline: 0,
-        },
+// variants for buttons
+const buttons = {
+  menu: {
+    display: [null, null, "none"],
+  }, // default variant for MenuButton
+  // you can reference other values defined in the theme
+  defaultBtn: {
+    borderRadius: "45px",
+    fontSize: ["14px", null, null, 2],
+    letterSpacings: "-0.15px",
+    padding: ["12px 20px", null, "15px 30px"],
+    fontFamily: "body",
+    cursor: "pointer",
+    lineHeight: 1.2,
+    transition: "all 0.25s",
+    fontWeight: 500,
+    "&:focus": {
+      outline: 0,
     },
-    primary: {
-        variant: "buttons.defaultBtn",
-        color: "text_secondary",
-        bg: "primary",
-        "&:hover": {
-            boxShadow: "rgba(233, 76, 84, 0.57) 0px 9px 20px -5px",
-        },
+  },
+  primary: {
+    variant: "buttons.defaultBtn",
+    color: "text_secondary",
+    bg: "primary",
+    "&:hover": {
+      boxShadow: "rgba(233, 76, 84, 0.57) 0px 9px 20px -5px",
     },
-    small: {
-        variant: "buttons.secondary",
-        padding: [
-            "10px 20px",
-            "10px 20px",
-            "10px 20px",
-            "10px 20px",
-            "10px 20px",
-        ],
+  },
+  small: {
+    variant: "buttons.secondary",
+    padding: ["10px 20px", "10px 20px", "10px 20px", "10px 20px", "10px 20px"],
+  },
+  whiteButton: {
+    variant: "buttons.defaultBtn",
+    color: "headingSecondary",
+    bg: "white",
+    "&:hover": {
+      boxShadow: "rgba(0, 0, 0, 0.5) 0px 12px 24px -10px",
     },
-    whiteButton: {
-        variant: "buttons.defaultBtn",
-        color: "headingSecondary",
-        bg: "white",
-        "&:hover": {
-            boxShadow: "rgba(0, 0, 0, 0.5) 0px 12px 24px -10px",
-        },
+  },
+  secondary: {
+    variant: "buttons.defaultBtn",
+    border: "2px solid",
+    borderColor: "primary",
+    color: "primary",
+    bg: "transparent",
+    padding: ["10px 15px", null, "15px 30px"],
+    "&:hover": {
+      color: "white",
+      bg: "primary",
     },
-    secondary: {
-        variant: "buttons.defaultBtn",
-        border: "2px solid",
-        borderColor: "primary",
-        color: "primary",
-        bg: "transparent",
-        padding: ["10px 15px", null, "15px 30px"],
-        "&:hover": {
-            color: "white",
-            bg: "primary",
-        },
+  },
+
+  secondaryGroup: {
+    variant: "buttons.secondary",
+    mx: [1],
+  },
+
+  textButton: {
+    variant: "buttons.defaultBtn",
+    backgroundColor: "transparent",
+    cursor: "pointer",
+    color: "white",
+    svg: {
+      fontSize: [4, 6],
+      mr: 2,
     },
-    textButton: {
-        variant: "buttons.defaultBtn",
-        backgroundColor: "transparent",
-        cursor: "pointer",
-        color: "white",
-        svg: {
-            fontSize: [4, 6],
-            mr: 2,
-        },
-    },
-    smallPadding: {
-        variant: "buttons.defaultBtn",
-        padding: ["10px 5px"],
-        backgroundColor: "transparent",
-    },
+  },
+  smallPadding: {
+    variant: "buttons.defaultBtn",
+    padding: ["10px 5px"],
+    backgroundColor: "transparent",
+  },
 };
 
 const fontSettings = {
-    fonts: {
-        base: "Poppins, sans-serif",
-        heading: "Poppins, sans-serif",
-        monospace: "Menlo, monospace",
-    },
-    fontSizes: [12, 14, 16, 18, 24, 30, 42, 50, 68, 96, 128],
-    
-    fontWeights: {
-        light: 300,
-        regular: 400,
-        medium: 500,
-        semibold: 600,
-        heading: 600,
-        bold: 600,
-    },
-    lineHeights: {
-        none: 1,
-        body: 1.5,
-        heading: 1.125,
-    },
-    letterSpacings: {
-        body: "normal",
-        medium: "0.1em",
-        caps: "0.2em",
-    },
+  fonts: {
+    base: "Poppins, sans-serif",
+    heading: "Poppins, sans-serif",
+    monospace: "Menlo, monospace",
+  },
+  fontSizes: [12, 14, 16, 18, 24, 30, 42, 50, 68, 96, 128],
+
+  fontWeights: {
+    light: 300,
+    regular: 400,
+    medium: 500,
+    semibold: 600,
+    heading: 600,
+    bold: 600,
+  },
+  lineHeights: {
+    none: 1,
+    body: 1.5,
+    heading: 1.125,
+  },
+  letterSpacings: {
+    body: "normal",
+    medium: "0.1em",
+    caps: "0.2em",
+  },
 };
 
 const radii = {
-    none: "0px",
-    base: "4px",
-    large: "0.5rem",
-    full: "9999px",
+  none: "0px",
+  base: "4px",
+  large: "0.5rem",
+  full: "9999px",
 };
 
 const forms = {
-    label: {
-      fontSize: 1,
-      fontWeight: 'bold',
+  label: {
+    fontSize: 1,
+    fontWeight: "bold",
+  },
+  input: {
+    borderRadius: 8,
+    borderColor: "border_color",
+    color: "red",
+    height: 60,
+    "&:focus": {
+      borderColor: "primary",
+      boxShadow: (t) => `0 0 0 2px ${t.colors.primary}`,
+      outline: "none",
     },
-    input: {
-      borderRadius: 8,
-      borderColor: 'border_color',
-      color : 'red',
-      height: 60,
-      '&:focus': {
-        borderColor: 'primary',
-        boxShadow: (t) => `0 0 0 2px ${t.colors.primary}`,
-        outline: 'none',
-      },
-    },
-  };
+  },
+};
 
 const shadows = {
-    none: "0 0 0",
-    small: "0 1px 1px rgba(114, 114, 114, 1)",
-    smallTransparent: "0 1px 1px rgba(114, 114, 114, 0.1)",
-    light: "0 5px 5px rgba(114, 114, 114, 0.4)",
-    lightTransparent: "0 5px 5px rgba(114, 114, 114, 0.1)",
-    base: "0 5px 5px #727272",
+  none: "0 0 0",
+  small: "0 1px 1px rgba(114, 114, 114, 1)",
+  smallTransparent: "0 1px 1px rgba(114, 114, 114, 0.1)",
+  light: "0 5px 5px rgba(114, 114, 114, 0.4)",
+  lightTransparent: "0 5px 5px rgba(114, 114, 114, 0.1)",
+  base: "0 5px 5px #727272",
 };
 
 export default {
-    ...colorSettings,
-    ...layout,
-    ...fontSettings,
-    ...forms,
-    buttons : { ...buttons },
-    styles: { ...styles },
-    breakpoints: [...breakpoints],
-    opacities: [...opacities],
-    space: [...space],
-    sizes: [...sizes],
-    radii: { ...radii },
-    shadows: { ...shadows },
+  ...colorSettings,
+  ...layout,
+  ...fontSettings,
+  ...forms,
+  buttons: { ...buttons },
+  styles: { ...styles },
+  breakpoints: [...breakpoints],
+  opacities: [...opacities],
+  space: [...space],
+  sizes: [...sizes],
+  radii: { ...radii },
+  shadows: { ...shadows },
 };
-
-
