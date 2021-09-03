@@ -31,7 +31,7 @@ const breakpoints = [
   "1366px",
   "1620px",
 ];
-const opacities = [0, 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1];
+const opacities = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1];
 const sizes = [0, 4, 8, 12, 16, 24, 28, 32, 36, 48, 64];
 
 // const space = [0, 4, 8, 12, 16, 32, 64, 128, 246, 450];
@@ -66,7 +66,7 @@ const colorSettings = {
     darkGray: "#727272",
     darkBlue: "#182334",
     darkPrimary: "#cc0101",
-    heading: "#222222", // primary heading color
+    heading: "#0F2137", // primary heading color
     headingSecondary: "#0F2137", // heading color
     accent: "#609", // a contrast color for emphasizing UI
   },
@@ -160,6 +160,34 @@ const buttons = {
   },
 };
 
+const sectionHeader = {
+  width: ["100%", null, "540px"],
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  mt: ["-3px", null, -1],
+  marginBottom: ["50px", null, "60px", null, null, "65px", null, "80px"],
+  mx: "auto",
+  title: {
+    fontSize: ["24px", null, "28px", null, null, "32px", null, "36px"],
+    color: "heading",
+    lineHeight: [1.3, null, null, 1.25],
+    textAlign: "center",
+    fontWeight: "700",
+    letterSpacing: "-.5px",
+  },
+  subTitle: {
+    fontSize: [0, "13px", null, "14px"],
+    color: "primary",
+    textAlign: "center",
+    letterSpacing: ["1.5px", null, "2px"],
+    textTransform: "uppercase",
+    fontWeight: "700",
+    mb: 2,
+    lineHeight: 1.5,
+  },
+};
+
 const fontSettings = {
   fonts: {
     base: "Poppins, sans-serif",
@@ -227,6 +255,7 @@ export default {
   ...layout,
   ...fontSettings,
   ...forms,
+  sectionHeader: { ...sectionHeader },
   buttons: { ...buttons },
   styles: { ...styles },
   breakpoints: [...breakpoints],
