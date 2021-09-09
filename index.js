@@ -88,7 +88,12 @@ const layout = {
 // variants for buttons
 const buttons = {
   menu: {
-    display: [null, null, "none"],
+    display: "block",
+    background: "transparent",
+    fontWeight: 400,
+    color: "heading",
+    mx: "1px",
+    position: "relative",
   }, // default variant for MenuButton
   // you can reference other values defined in the theme
   defaultBtn: {
