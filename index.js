@@ -56,7 +56,7 @@ const colorSettings = {
     secondary: "#1606AA",
     lightPrimary: "#F6C3C3",
     lightestPrimary: "#FAEAEA",
-    mutedPrimary: "#FAEAEA",
+    mutedPrimary: "#7B8188",
     cancel: "#FF0000",
     correct: "#28A745",
     available: "#6CC986",
@@ -217,7 +217,8 @@ const fontSettings = {
   letterSpacings: {
     body: "normal",
     medium: "0.1em",
-    caps: "0.2em",
+    caps: "0.15em",
+    heading: "-0.5px",
   },
 };
 
