@@ -122,12 +122,26 @@ const buttons = {
     variant: "buttons.secondary",
     padding: ["10px 20px", "10px 20px", "10px 20px", "10px 20px", "10px 20px"],
   },
-  whiteButton: {
-    variant: "buttons.defaultBtn",
-    color: "headingSecondary",
-    bg: "white",
+  teachSecondary: {
+    variant: "buttons.secondary",
+    borderRadius: "10px",
+    padding: ["10px 20px", null, "10px 20px"],
+    fontWeight: 500,
+    ml: 2,
     "&:hover": {
-      boxShadow: "rgba(0, 0, 0, 0.5) 0px 12px 24px -10px",
+      color: "red",
+    },
+  },
+  teachPrimary: {
+    variant: "buttons.teachSecondary",
+    borderRadius: "10px",
+    padding: ["10px 20px", null, "10px 20px"],
+    backgroundColor: "red",
+    color: "white",
+    fontWeight: 500,
+    ml: 2,
+    "&:hover": {
+      color: "white",
     },
   },
   secondary: {
