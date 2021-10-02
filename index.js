@@ -124,21 +124,23 @@ const buttons = {
   },
   teachSecondary: {
     variant: "buttons.secondary",
-    borderRadius: "10px",
+    borderRadius: "5px",
     padding: ["10px 20px", null, "10px 20px"],
-    fontWeight: 500,
+    fontWeight: "bold",
+    borderColor: "#F34E4E",
     ml: 2,
     "&:hover": {
-      color: "red",
+      color: "#F34E4E",
     },
   },
   teachPrimary: {
     variant: "buttons.teachSecondary",
-    borderRadius: "10px",
+    borderRadius: "5px",
     padding: ["10px 20px", null, "10px 20px"],
-    backgroundColor: "red",
+    backgroundColor: "#F34E4E",
     color: "white",
-    fontWeight: 500,
+    borderColor: "#F34E4E",
+    fontWeight: "bold",
     ml: 2,
     "&:hover": {
       color: "white",
@@ -261,6 +263,35 @@ const forms = {
   },
 };
 
+const section = {
+  keyFeature: {
+    pt: [8, null, 9, null, null, 10],
+    pb: ["90px", null, 9, null, null, 10, null, "165px"],
+  },
+  feature: {
+    pb: [8, null, 9, null, null, 10, null, "170px"],
+  },
+  news: {
+    pb: [8, null, 9, null, null, 10, null, "170px"],
+  },
+  coreFeature: {
+    pb: [8, null, 9, null, null, 10, null, "170px"],
+    overflow: "hidden",
+  },
+  testimonial: {
+    pt: [8, null, 8, "70px", null, 8, null, "145px"],
+    pb: ["90px", null, 9, null, null, 10, null, "190px"],
+    overflow: "hidden",
+  },
+  services: {
+    pb: ["90px", null, 9, null, null, 10, null, "150px"],
+  },
+  pricing: {
+    pt: [8, null, 9, null, null, 10, null, "180px"],
+    pb: ["90px", null, 9, null, null, 10, null, "180px"],
+  },
+};
+
 const shadows = {
   none: "0 0 0",
   small: "0 1px 1px rgba(114, 114, 114, 1)",
@@ -276,6 +307,7 @@ export default {
   ...fontSettings,
   ...forms,
   sectionHeader: { ...sectionHeader },
+  section: { ...section },
   buttons: { ...buttons },
   styles: { ...styles },
   breakpoints: [...breakpoints],
