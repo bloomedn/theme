@@ -90,9 +90,9 @@ const buttons = {
   menu: {
     display: "block",
     background: "transparent",
-    fontWeight: 400,
+    fontWeight: "100",
     color: "heading",
-    mx: "1px",
+    mx: "7px",
     position: "relative",
   }, // default variant for MenuButton
   // you can reference other values defined in the theme
